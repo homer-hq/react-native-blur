@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
   View,
-  ViewPropTypes,
   StyleSheet,
 } from 'react-native';
 
@@ -33,7 +32,7 @@ class BlurView extends Component {
 }
 
 BlurView.propTypes = {
-  ...(ViewPropTypes || View.propTypes),
+  ...(View.propTypes),
   blurAmount: PropTypes.number,
   blurType: PropTypes.oneOf(['dark', 'light', 'xlight']),
 
