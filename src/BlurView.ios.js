@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, requireNativeComponent, ViewPropTypes } from 'react-native';
+import { View, requireNativeComponent } from 'react-native';
 
 class BlurView extends Component {
   setNativeProps = nativeProps => {
@@ -21,7 +21,6 @@ class BlurView extends Component {
 }
 
 BlurView.propTypes = {
-  ...(ViewPropTypes || View.propTypes),
   blurType: PropTypes.oneOf([
     'dark',
     'light',
